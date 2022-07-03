@@ -1,0 +1,73 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+  
+#root {
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-image: url('08_messaging-app.jpg');
+}
+
+.joinInnerContainer {
+    width: 27%;
+}
+
+.heading {
+    color: greenyellow;
+    text-shadow: 2px 2px 2px purple;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+.joinInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 3px black;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+        /* background-size: contain; */
+        height: 100%;
+    }
+
+    .joinInnerContainer {
+        width: 90%;
+    }
+}
+
+button:focus {
+    outline: 0;
+}
